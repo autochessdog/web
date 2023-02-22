@@ -1,0 +1,197 @@
+:root {
+  /* COLORS */
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(205, 78%, 60%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+  /*    FONTS    */
+  --ff-primary: 'Epilogue', sans-serif;
+  --fs-paragraph: 18px;
+  --fw-500: 500;
+  --fw-700: 700;
+  --transition: all 0.3s linear;
+  --spacing: 0.2rem;
+  --radius: 0.25rem;
+  --btn-radius: 0.8rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+
+  }
+
+  /*  GLOBAL  STYLES  */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+
+div.left-container{
+  overflow: hidden;
+  height:40vw;  
+}
+div.left-container article{
+  margin: auto;
+}
+div.right-container{
+  overflow: hidden;
+  height:40vw;
+}
+
+img {
+  width: 100%; /* or any custom size */
+  height: 100%; 
+  object-fit: contain;
+  margin-top: 0;
+  
+  
+}  
+@media screen and (max-width: 700px){
+  #wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #firstDiv {
+    order: 1;
+  }
+  
+  #secondDiv {
+    order: 0;
+  }
+  div.left-container{
+    height:90vw;
+  }
+  
+  div.right-container{
+    height:90vw;
+  }
+
+}
+
+
+
+
+
+
+  
+  /* Text Content */
+  .text-content
+  {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .text-content h1 {
+    font-size: 28px;
+    margin: 1rem auto;
+  }
+
+  .text-content p {
+    margin: 1rem 1rem;
+    color: var(--Almost-Black);
+    font-weight: var(--fw-500);
+    opacity: 0.7;
+  }
+
+  /* Button Center */
+  .btn-black {
+    height: 2.5rem;
+    width: 8rem;
+    font-size: 16px;
+    font-weight: var(--fw-700);
+    background-color: var(--Almost-Black);
+    color: var(--Almost-White);
+    border-radius: var(--btn-radius);
+    margin: 1rem 0 2rem 0;
+  }
+
+  /* Companies */
+  .companies {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+
+  .company-box {
+    margin: 0 0.3rem;
+  }
+  
+  .company-box img{
+    width: 100%;
+  }
+
+
+
+  /* DESKTOP DESIGNS */
+  @media (min-width:700px) {
+
+
+    /* Text Content */
+    .text-content
+    {
+      margin: auto 2rem;
+      text-align: start;
+      max-width: 50%;
+    }
+
+    /* Heading */
+    .text-content h1 {
+      font-size: 60px;
+      margin: 0rem 1rem 3rem 1rem;
+      font-weight: var(--fw-700);
+    }
+
+    /* Paragraph */
+    .text-content p {
+      margin: 2rem 1rem;
+    }
+
+    /* learn More Btn */
+    .btn-black {
+      margin-left: 1rem;
+    }
+
+    /* Companies Section */
+    .companies {
+      margin-top: 5rem;
+    }
+  
+
+  }
+
