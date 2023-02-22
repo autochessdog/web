@@ -8,7 +8,7 @@ if (window.innerWidth<700){
 var views=mobileview
 }
 else{
-  var view=desktopview
+  var views=desktopview
 }
 export class Contenti extends Component {
 
